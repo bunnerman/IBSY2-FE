@@ -18,9 +18,9 @@ function App() {
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
               <a className="nav-link" href="#badges">Badges</a>
-              <a className="nav-link" href="#">Modal</a>  
+              <a className="nav-link" href="#modal">Modal</a>  
               <a className="nav-link" href="#carousel">Carousel</a>
-              <a className="nav-link" href="#">ac</a>
+              <a className="nav-link" href="#accordion">Accordion</a>
             </div>
           </div>
         </div>
@@ -65,7 +65,7 @@ function App() {
         </div>
         <div className="card cardMargin">
           <div className="card-body">
-            <h2 id="test" className="card-title">Accordion</h2>
+            <h2 id="accordion" className="card-title">Accordion</h2>
               <p>
                 An Accordion is a responsive UI element in FrontEnd terminology which opens certain sections of itself on clicking
                 the corrresponding sections of it
