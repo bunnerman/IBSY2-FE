@@ -1,3 +1,9 @@
+html
+{
+    font-size: 120%;
+    scroll-behavior: smooth;
+}
+
 .customTheme 
 {
     --bs-body-color: hsl(0, 0%, 95%);
@@ -8,7 +14,7 @@
 }
 .customTheme .navbar 
 {
-    --bs-navbar-bg: hsl(210, 5%, 8%);
+    --bs-navbar-bg: hsl(210, 5%, 5%);
     --bs-navbar-color: hsl(0, 0%, 90%);
     --bs-navbar-hover-color: #fff;
     --bs-navbar-active-color: #fff;
