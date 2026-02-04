@@ -1,0 +1,21 @@
+.customTheme 
+{
+    --bs-body-color: hsl(0, 0%, 95%);
+    --bs-body-bg: hsl(210, 5%, 10%);
+
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+}
+.customTheme .navbar 
+{
+    --bs-navbar-bg: hsl(210, 5%, 8%);
+    --bs-navbar-color: hsl(0, 0%, 90%);
+    --bs-navbar-hover-color: #fff;
+    --bs-navbar-active-color: #fff;
+    --bs-navbar-brand-color: #fff;
+}
+
+.cardMargin
+{
+	margin: 10px 0 10px 0;
+}
