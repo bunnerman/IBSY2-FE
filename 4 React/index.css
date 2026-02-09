@@ -1,0 +1,82 @@
+html
+{
+	scroll-behavior: smooth;
+}
+body
+{
+	color: hsl(210, 70%, 95%);
+	background-color: hsl(210, 10%, 8%);
+	
+	font-family: 'Open Sans', sans-serif;
+}
+
+.formArea
+{
+	background-color: hsl(210, 12%, 8%);
+	text-align: center;
+ 
+	border: 2px solid hsl(140, 0%, 40%);
+	border-radius: 30px;
+	padding: 1rem;
+
+	transition-duration: 200ms;	
+}
+.formArea:hover
+{
+	background-color: hsl(210, 15%, 8%);
+	border-color: hsl(140, 0%, 50%);
+}
+.formArea > input
+{
+	color: hsl(210, 90%, 98%);
+	background-color: hsl(210, 15%, 9%);
+	
+	width: 500px;
+	font-size: 130%;
+
+	margin: 0.3rem;	
+	border-radius: 7px;
+	padding: 0.2rem;
+	
+	transition-duration: 300ms;
+}
+.formArea > input:focus
+{
+	border-color:	gray;
+	transition-duration: 300ms;
+}
+.formArea > textarea
+{
+	color: hsl(210, 90%, 98%);
+	background-color: hsl(210, 15%, 9%);
+
+	font-family: 'Open Sans';
+	font-size: 130%;
+
+	height: 300px;
+	width: 600px;
+	border-radius: 10px;
+
+	margin: 0.3rem;
+	padding: 0.2rem;
+}
+
+.submitBtn
+{
+	color: hsl(210, 70%, 95%);
+	background-color: hsl(140, 90%, 30%);
+
+	font-size: 200%;
+	font-family: 'JetBrains Mono NL';
+	
+	margin: 1rem;
+	border: 2px solid hsl(210, 70%, 95%);
+	border-radius: 6px;
+	padding: 7px;
+
+	transition-duration: 300ms;
+}
+.submitBtn:hover
+{
+	background-color: hsl(140, 90%, 20%);
+}
