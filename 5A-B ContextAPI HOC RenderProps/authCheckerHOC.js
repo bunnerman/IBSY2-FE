@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { AuthContext } from "../App.js";
 import "../index.css";
 
-export default function withAuth(Component) 
+function authWrapper(Component) 
 {
   return function(props) 
 	{
@@ -20,3 +20,5 @@ export default function withAuth(Component)
 			);
   };
 }
+
+export default authWrapper;
