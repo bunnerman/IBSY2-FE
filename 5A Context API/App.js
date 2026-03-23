@@ -1,20 +1,50 @@
-import { createContext, useState } from "react";
-import Page from "./components/Page.js";
+import { useContext, createContext, useState } from "react";
+import ExampleText from "./components/ExampleText.js";
+import "./index.css";
 
-export const ThemeContext = createContext();
+export const AuthContext = createContext();
 
-function App() {
-  const [theme, setTheme] = useState("light");
-
-  function toggleTheme() {
-    setTheme(theme === "light" ? "dark" : "light");
-  }
-
-  return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      <Page />
-    </ThemeContext.Provider>
-  );
+function AuthStatus({ render }) 
+{
+  const { loginStatus } = useContext(AuthContext);
+  return render(loginStatus);
 }
 
-export default App;
+export default function App() 
+{
+  const [loginStatus, setLoginStatus] = useState(false);
+  const [user, setUser] = useState("");
+  const [pass, setPass] = useState("");
+
+  return (
+    <AuthContext.Provider value={{ loginStatus }}>
+      <div className = "customTheme" style = {{ minHeight: "100vh" }}>
+        <input placeholder="username" onChange={(e) => setUser(e.target.value)}/><br/>
+        <input placeholder="password" onChange={(e) => setPass(e.target.value)}/><br/>
+				<p>Use the following credentials: </p>
+				<p><b>Username:</b> abc<br/><b>Password:</b> 123</p>
+        <button onClick={() => 
+				{
+          if (user === "abc" && pass === "123")
+            setLoginStatus(true);
+					else
+						alert("Not correct user")
+        }}>
+          Login
+        </button>
+
+				{/*Render Props Used Here*/}
+				<AuthStatus
+				render={(isLoggedIn) =>
+					isLoggedIn ? (
+						<h3>🟢 Logged in 🟢</h3>
+					) : (
+						<h3>🔴 Logged Out 🔴</h3>
+					)
+				}
+			/>
+        <ExampleText />
+      </div>
+    </AuthContext.Provider>
+  );
+}
