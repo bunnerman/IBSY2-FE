@@ -25,24 +25,24 @@ function App()
 				<p><b>Username:</b> abc<br/><b>Password:</b> 123</p>
         <button onClick={() => 
 				{
-          if (user === "abc" && pass === "123")
+          if (user == "abc" && pass == "123")
             setLoginStatus(true);
 					else
-						alert("Not correct user")
+						alert("Not correct")
         }}>
           Login
         </button>
 
 				{/*Render Props Used Here*/}
 				<AuthStatus
-				render={(isLoggedIn) =>
-					isLoggedIn ? (
+				render={(isLoggedIn) => isLoggedIn ? 
+					(
 						<h3>🟢 Logged in 🟢</h3>
-					) : (
+					) : 
+					(
 						<h3>🔴 Logged Out 🔴</h3>
 					)
-				}
-			/>
+				}/>
         <ExampleText />
       </div>
     </AuthContext.Provider>
