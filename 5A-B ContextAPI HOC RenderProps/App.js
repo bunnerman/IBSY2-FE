@@ -10,7 +10,7 @@ function AuthStatus({ render })
   return render(loginStatus);
 }
 
-export default function App() 
+function App() 
 {
   const [loginStatus, setLoginStatus] = useState(false);
   const [user, setUser] = useState("");
@@ -48,3 +48,5 @@ export default function App()
     </AuthContext.Provider>
   );
 }
+
+export default App; 
