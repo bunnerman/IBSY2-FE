@@ -3,7 +3,7 @@ import errorWrapper from "./errorWrapper.js";
 
 function ExampleComponent()
 {
-	// throw new Error("Crash"); // uncomment this line to let the error appear
+	// throw new Error("Manual Intentional Error"); // uncomment this line to let the error appear
 	return (
 		<div className = "customTheme">
 			<h2>Error Boundary Experiment</h2>
