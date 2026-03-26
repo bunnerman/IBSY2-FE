@@ -1,0 +1,44 @@
+.customTheme
+{
+	zoom: 120%;
+	color: hsl(220, 3%, 91%);
+	background-color: hsl(210, 5%, 7%);
+	margin: 5px;
+	padding: 10px;
+	border: 2px solid hsl(220, 3%, 71%);
+	border-radius: 5px;
+}
+
+.depositBtn
+{
+	color: hsl(220, 3%, 91%);
+	background-color: hsl(210, 80%, 30%);
+	margin: 5px;
+	padding: 10px;
+	border: 2px solid hsl(220, 3%, 71%);
+	border-radius: 10px;
+	transition-duration: 400ms;
+}
+.depositBtn:hover
+{
+	color: hsl(220, 3%, 95%);
+	background-color: hsl(210, 80%, 35%);
+	border-radius: 3px;
+}
+
+.withdrawBtn
+{
+	color: hsl(220, 3%, 91%);
+	background-color: hsl(120, 80%, 30%);
+	margin: 5px;
+	padding: 10px;
+	border: 2px solid hsl(220, 3%, 71%);
+	border-radius: 10px;
+	transition-duration: 400ms;
+}
+.withdrawBtn:hover
+{
+	color: hsl(220, 3%, 95%);
+	background-color: hsl(120, 80%, 35%);
+	border-radius: 3px;
+}
