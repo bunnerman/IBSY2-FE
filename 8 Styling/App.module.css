@@ -1,0 +1,19 @@
+.container {
+	padding: 20px;
+	text-align: center;
+	border: 2px dashed black;
+}
+
+.title {
+	color: aqua;
+}
+
+@media (max-width: 768px) {
+	.container {
+		background-color: bisque;
+	}
+}
+
+.blueText {
+	color: blue;
+}
